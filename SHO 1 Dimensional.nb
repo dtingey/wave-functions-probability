@@ -1,0 +1,230 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10170,        222]
+NotebookOptionsPosition[      9409,        201]
+NotebookOutlinePosition[      9902,        219]
+CellTagsIndexPosition[      9859,        216]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Clear", "[", "\"\<`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.85864447657368*^9, 3.8586444853589077`*^9}},
+ CellLabel->"In[45]:=",ExpressionUUID->"726a171b-de67-4163-935c-c4695b615a85"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Column", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{
+       "\"\<Wave Function of Particle in 1D box\>\"", ",", " ", "Bold"}], 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Sqrt", "[", 
+          RowBox[{"(", 
+           RowBox[{"2", "/", "len"}], ")"}], "]"}], "*", 
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"n", "*", "Pi", "*", "x"}], ")"}], "/", "len"}], "]"}]}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "len"}], "}"}], ",", " ", 
+        RowBox[{"PlotRange", "\[Rule]", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "2"}], ",", "2"}], "}"}]}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<Probability Distribution\>\"", ",", "Bold"}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"psi", "[", "x", "]"}], ")"}], "^", "2"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "len"}], "}"}], ",", " ", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "2.5"}], "}"}]}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "Medium"}], ",", 
+        RowBox[{"PlotStyle", "\[Rule]", "Red"}]}], "]"}]}], "}"}], "]"}], ",",
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", "controls", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", "1", ",", "\"\<quantum number\>\""}], "}"}], ",", 
+     RowBox[{"Range", "[", 
+      RowBox[{"1", ",", "6"}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"len", ",", "1", ",", "\"\<length of 1D box\>\""}], "}"}], ",", 
+     "1", ",", "10", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"Initialization", "\[RuleDelayed]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"psi", "[", "x_", "]"}], ":=", 
+      RowBox[{
+       RowBox[{"Sqrt", "[", 
+        RowBox[{"(", 
+         RowBox[{"2", "/", "len"}], ")"}], "]"}], "*", 
+       RowBox[{"Sin", "[", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"n", "*", "Pi", "*", "x"}], ")"}], "/", "len"}], "]"}]}]}], 
+     "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.858643307446024*^9, 3.8586433578045397`*^9}, {
+   3.858643399397709*^9, 3.858643442992628*^9}, {3.8586435700440044`*^9, 
+   3.8586436187586613`*^9}, {3.8586436835704126`*^9, 3.858643730578721*^9}, {
+   3.8586438229968476`*^9, 3.858643825336647*^9}, {3.858643870075115*^9, 
+   3.858643885513075*^9}, {3.858643919899312*^9, 3.8586440054707775`*^9}, {
+   3.8586440579626384`*^9, 3.8586440651619997`*^9}, {3.858644127969963*^9, 
+   3.8586441650842953`*^9}, {3.8586442328738394`*^9, 
+   3.8586443145426617`*^9}, {3.858644350645975*^9, 3.8586443641401253`*^9}, {
+   3.8586444703709393`*^9, 3.858644581503394*^9}, {3.8586447607534413`*^9, 
+   3.858644808071052*^9}, {3.8586450357946615`*^9, 3.8586450553455153`*^9}, {
+   3.858645091052579*^9, 3.858645109173518*^9}, {3.858645140474147*^9, 
+   3.858645149005486*^9}, {3.85864522780161*^9, 3.8586453443327427`*^9}, {
+   3.8586454283459177`*^9, 3.8586454435892673`*^9}, {3.858645542053009*^9, 
+   3.8586455479757853`*^9}, {3.858645579776618*^9, 3.858645585445236*^9}, {
+   3.8586456156746464`*^9, 3.858645622255045*^9}, {3.8586456670219975`*^9, 
+   3.85864569747365*^9}, {3.8586457837834535`*^9, 3.858645844856885*^9}, 
+   3.858645875714047*^9, {3.8586459083020067`*^9, 3.8586459320228615`*^9}, {
+   3.858645976729379*^9, 3.8586460087685847`*^9}, {3.858646038933403*^9, 
+   3.858646119208599*^9}, {3.8586464237672834`*^9, 3.8586464431763554`*^9}, {
+   3.85864651907812*^9, 3.8586465458528185`*^9}, {3.8586465857545867`*^9, 
+   3.8586466452549934`*^9}, {3.858646702790784*^9, 3.8586467372206306`*^9}, 
+   3.8586469027484813`*^9, {3.858647185504992*^9, 3.858647273258382*^9}, {
+   3.8586473589760056`*^9, 3.8586473596165*^9}, {3.858647537306141*^9, 
+   3.858647754038915*^9}, {3.8586478252803698`*^9, 3.858647838752652*^9}, {
+   3.858647883438566*^9, 3.8586479845180874`*^9}, {3.8586480197155952`*^9, 
+   3.858648021486136*^9}, {3.8586480548842297`*^9, 3.8586480559780416`*^9}, 
+   3.8586481131635685`*^9, {3.858648160378397*^9, 3.858648194151368*^9}, {
+   3.858648230212849*^9, 3.8586483968450017`*^9}, {3.8586484659072547`*^9, 
+   3.8586484802400255`*^9}, {3.858648527033222*^9, 3.858648527298953*^9}, {
+   3.8586485775880537`*^9, 3.8586486034496717`*^9}, {3.8586487962054253`*^9, 
+   3.858648826160447*^9}, {3.8586488616616426`*^9, 3.8586489678876686`*^9}, {
+   3.8586490355166473`*^9, 3.858649128349288*^9}, {3.858649213161454*^9, 
+   3.8586494015596523`*^9}, {3.8586497168620653`*^9, 3.858649733916607*^9}, {
+   3.858649835219057*^9, 3.8586498691684837`*^9}, 3.8586499386663494`*^9, {
+   3.8586499764226723`*^9, 3.858649999088331*^9}, {3.8586500292048945`*^9, 
+   3.858650036472015*^9}, 3.8586500783043437`*^9, {3.858650242856742*^9, 
+   3.8586502963105855`*^9}, {3.858650609324253*^9, 3.8586506470060396`*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"a51540ae-64aa-4be8-9c03-97d67651578d"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`len$$ = 3.49, $CellContext`n$$ = 1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`n$$], 1, "quantum number"}, {1, 2, 3, 4, 5, 6}}, {{
+       Hold[$CellContext`len$$], 1, "length of 1D box"}, 1, 10}}, 
+    Typeset`size$$ = {360., {249.29999999999995`, 255.29999999999995`}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`len$$ = 1, $CellContext`n$$ = 1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Column[{
+         Style["Wave Function of Particle in 1D box", Bold], 
+         Plot[
+         Sqrt[2/$CellContext`len$$] 
+          Sin[($CellContext`n$$ 
+             Pi $CellContext`x)/$CellContext`len$$], {$CellContext`x, 
+           0, $CellContext`len$$}, PlotRange -> {-2, 2}, ImageSize -> Medium], 
+         Style["Probability Distribution", Bold], 
+         Plot[$CellContext`psi[$CellContext`x]^2, {$CellContext`x, 
+           0, $CellContext`len$$}, PlotRange -> {0, 2.5}, ImageSize -> Medium,
+           PlotStyle -> Red]}], 
+      "Specifications" :> {{{$CellContext`n$$, 1, "quantum number"}, {1, 2, 3,
+          4, 5, 6}}, {{$CellContext`len$$, 1, "length of 1D box"}, 1, 10, 
+         Appearance -> "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{720., {279., 285.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`psi[
+         Pattern[$CellContext`x$, 
+          Blank[]]] := 
+       Sqrt[2/$CellContext`len$$] 
+        Sin[($CellContext`n$$ Pi $CellContext`x$)/$CellContext`len$$]}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.858649724599615*^9, 3.8586497347913837`*^9}, 
+   3.8586499056758966`*^9, 3.858649943026311*^9, {3.858649982211483*^9, 
+   3.8586500048218355`*^9}, {3.8586500408571277`*^9, 3.858650056395147*^9}, 
+   3.858650166947394*^9, 3.858650202581174*^9, {3.8586502643677883`*^9, 
+   3.858650297279294*^9}, {3.8586506146523542`*^9, 3.858650647599799*^9}},
+ CellLabel->"Out[53]=",ExpressionUUID->"bd9f6b50-73f0-45c4-af5d-38d62a06b7fb"]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.8586488438457303`*^9},ExpressionUUID->"2ea5cf87-62ac-49ac-b6aa-\
+9fa0916571d0"]
+},
+WindowSize->{949., 472.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a192852c-64ea-432d-aa65-96514fa64f56"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 213, 3, 28, "Input",ExpressionUUID->"726a171b-de67-4163-935c-c4695b615a85"],
+Cell[CellGroupData[{
+Cell[796, 27, 5499, 109, 223, "Input",ExpressionUUID->"a51540ae-64aa-4be8-9c03-97d67651578d"],
+Cell[6298, 138, 2943, 55, 583, "Output",ExpressionUUID->"bd9f6b50-73f0-45c4-af5d-38d62a06b7fb"]
+}, Open  ]],
+Cell[9256, 196, 149, 3, 48, "Input",ExpressionUUID->"2ea5cf87-62ac-49ac-b6aa-9fa0916571d0"]
+}
+]
+*)
+
