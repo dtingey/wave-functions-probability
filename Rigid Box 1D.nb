@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10235,        224]
-NotebookOptionsPosition[      9469,        203]
-NotebookOutlinePosition[      9967,        221]
-CellTagsIndexPosition[      9924,        218]
+NotebookDataLength[     10428,        228]
+NotebookOptionsPosition[      9634,        206]
+NotebookOutlinePosition[     10160,        225]
+CellTagsIndexPosition[     10117,        222]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,14 +21,14 @@ Notebook[{
 Cell[BoxData[
  RowBox[{"Clear", "[", "\"\<`*\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.85864447657368*^9, 3.8586444853589077`*^9}},
- CellLabel->"In[7]:=",ExpressionUUID->"726a171b-de67-4163-935c-c4695b615a85"],
+ CellLabel->"In[2]:=",ExpressionUUID->"726a171b-de67-4163-935c-c4695b615a85"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"Manipulate", "[", 
   RowBox[{
-   RowBox[{"Row", "[", 
+   RowBox[{"Column", "[", 
     RowBox[{"{", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"Style", "[", 
@@ -53,10 +53,10 @@ Cell[BoxData[
           RowBox[{
            RowBox[{"-", "2"}], ",", "2"}], "}"}]}], ",", 
         RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"Style", "[", 
-       RowBox[{"\"\<Probability Distribution\>\"", ",", "Bold"}], "]"}], ",", 
-      "\[IndentingNewLine]", 
+      RowBox[{"s", "\[IndentingNewLine]", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Probability Distribution\>\"", ",", "Bold"}], "]"}]}], 
+      ",", "\[IndentingNewLine]", 
       RowBox[{"Plot", "[", 
        RowBox[{
         RowBox[{
@@ -134,8 +134,10 @@ Cell[BoxData[
    3.8586499764226723`*^9, 3.858649999088331*^9}, {3.8586500292048945`*^9, 
    3.858650036472015*^9}, 3.8586500783043437`*^9, {3.858650242856742*^9, 
    3.8586502963105855`*^9}, {3.858650609324253*^9, 3.8586506470060396`*^9}, {
-   3.8588869767738023`*^9, 3.8588869772024617`*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"a51540ae-64aa-4be8-9c03-97d67651578d"],
+   3.8588869767738023`*^9, 3.8588869772024617`*^9}, {3.858899766382265*^9, 
+   3.8588997683106356`*^9}, 
+   3.858900465524533*^9},ExpressionUUID->"a51540ae-64aa-4be8-9c03-\
+97d67651578d"],
 
 Cell[BoxData[
  TagBox[
@@ -146,7 +148,7 @@ Cell[BoxData[
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`n$$], 1, "quantum number"}, {1, 2, 3, 4, 5, 6}}, {{
        Hold[$CellContext`len$$], 1, "length of 1D box"}, 1, 10}}, 
-    Typeset`size$$ = {1118.25, {116., 121.31189606246318`}}, 
+    Typeset`size$$ = {252., {175.95999999999998`, 179.95999999999998`}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
@@ -156,7 +158,7 @@ Cell[BoxData[
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> Row[{
+         Typeset`skipInitDone$$}, "Body" :> Column[{
          Style["Wave Function of Particle in 1D box", Bold], 
          Plot[
          Sqrt[2/$CellContext`len$$] 
@@ -170,7 +172,7 @@ Cell[BoxData[
       "Specifications" :> {{{$CellContext`n$$, 1, "quantum number"}, {1, 2, 3,
           4, 5, 6}}, {{$CellContext`len$$, 1, "length of 1D box"}, 1, 10, 
          Appearance -> "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{1167., {172., 178.}},
+     ImageSizeCache->{509., {198., 202.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -192,8 +194,9 @@ Cell[BoxData[
    3.8586500048218355`*^9}, {3.8586500408571277`*^9, 3.858650056395147*^9}, 
    3.858650166947394*^9, 3.858650202581174*^9, {3.8586502643677883`*^9, 
    3.858650297279294*^9}, {3.8586506146523542`*^9, 3.858650647599799*^9}, 
-   3.8588869847045403`*^9},
- CellLabel->"Out[8]=",ExpressionUUID->"d9eb3021-dd2f-49b9-a0e5-a532874e996c"]
+   3.8588869847045403`*^9, {3.858899224001202*^9, 3.858899229872347*^9}, 
+   3.8588997694167614`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"37f52c74-16a7-40c6-8ef9-bd71855556a6"]
 }, Open  ]],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
@@ -201,10 +204,11 @@ Cell[BoxData["\[IndentingNewLine]"], "Input",
   3.8586488438457303`*^9},ExpressionUUID->"2ea5cf87-62ac-49ac-b6aa-\
 9fa0916571d0"]
 },
-WindowSize->{1440., 747.75},
-WindowMargins->{{956, Automatic}, {Automatic, -4}},
+WindowSize->{960, 478},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
 TaggingRules->{
  "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+Magnification:>0.7 Inherited,
 FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"6df5821a-d639-4429-a787-e74a6bc79488"
@@ -220,12 +224,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 212, 3, 28, "Input",ExpressionUUID->"726a171b-de67-4163-935c-c4695b615a85"],
+Cell[558, 20, 212, 3, 21, "Input",ExpressionUUID->"726a171b-de67-4163-935c-c4695b615a85"],
 Cell[CellGroupData[{
-Cell[795, 27, 5549, 110, 216, "Input",ExpressionUUID->"a51540ae-64aa-4be8-9c03-97d67651578d"],
-Cell[6347, 139, 2954, 56, 369, "Output",ExpressionUUID->"d9eb3021-dd2f-49b9-a0e5-a532874e996c"]
+Cell[795, 27, 5626, 112, 158, "Input",ExpressionUUID->"a51540ae-64aa-4be8-9c03-97d67651578d"],
+Cell[6424, 141, 3042, 57, 413, "Output",ExpressionUUID->"37f52c74-16a7-40c6-8ef9-bd71855556a6"]
 }, Open  ]],
-Cell[9316, 198, 149, 3, 47, "Input",ExpressionUUID->"2ea5cf87-62ac-49ac-b6aa-9fa0916571d0"]
+Cell[9481, 201, 149, 3, 34, "Input",ExpressionUUID->"2ea5cf87-62ac-49ac-b6aa-9fa0916571d0"]
 }
 ]
 *)
